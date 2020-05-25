@@ -14,7 +14,7 @@ In this project, we built an ETL pipeline that extracts their data from S3, stag
 We implemented the Star Schema for this project, with one fact table (songplays) and four dimension tables (users, songs, artists, and time).
 
 ### Files
-In addition to the data files, the project workspace includes six files:
+In addition to the data files, the project workspace includes three files:
 
 * 1. create_tables.py drops and creates your tables. You run this file to reset your tables before each time you run your ETL scripts.
 * 2. etl.py loads data from staging tables to analytics tables on Redshift
