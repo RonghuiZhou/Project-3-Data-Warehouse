@@ -20,6 +20,20 @@ In addition to the data files, the project workspace includes three files:
 * 2. etl.py loads data from staging tables to analytics tables on Redshift
 * 3. dwh.cfg contains the login information to Amazon.
 
+### AWS account
+* 1. Open a regular AWS account (if you don't already have one) following the instructions via the [Amazon Web Service Help Center](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
+* 2. Create an IAM role
+* 3. Create Security Group
+* 4. Launch a Redshift Cluster
+* 5. Create an S3 Bucket
+* 6. Create PostgreSQL RDS
+
+### How to run
+* 1. Enter your AWS account information in dwh.cfg
+* 2. In terminal, run 'python create_tables.py'
+* 3. In terminal run 'python etl.py'
+
+
 ### Data
 You'll be working with two datasets that reside in S3. Here are the S3 links for each:
 
